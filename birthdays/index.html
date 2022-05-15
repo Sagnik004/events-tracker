@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events Tracker App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/global-styles.css" />
+    <link
+      rel="stylesheet"
+      href="/components/side-navigation/side-navigation-styles.css"
+    />
+    <link rel="stylesheet" href="birthdays-styles.css" />
+    <script src="/components/side-navigation/side-navigation.js" defer></script>
+    <script src="birthday.js" defer></script>
+  </head>
+  <body>
+    <div id="backdrop"></div>
+    <header>
+      <a href="/birthdays" class="logo">Events</a>
+      <nav>
+        <svg viewBox="0 0 100 85" width="30" height="40" id="menu-icon">
+          <rect width="100" height="12" rx="8"></rect>
+          <rect y="30" width="100" height="12" rx="8"></rect>
+          <rect y="60" width="100" height="12" rx="8"></rect>
+        </svg>
+        <ul>
+          <li>
+            <button type="button" class="add-event-btn">Add Event</button>
+          </li>
+          <li>
+            <a href="/birthdays">Birthdays</a>
+          </li>
+          <li>
+            <a href="/anniversaries">Anniversaries</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <aside id="side-drawer">
+      <nav>
+        <div id="drawer-menu-icon">X</div>
+        <ul id="nav-list">
+          <li data-pathname="birthdays">
+            <a href="/birthdays">Birthdays</a>
+          </li>
+          <li data-pathname="anniversaries">
+            <a href="/anniversaries">Anniversaries</a>
+          </li>
+          <li>
+            <button type="button" class="add-event-btn">Add New Event</button>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+  </body>
+</html>

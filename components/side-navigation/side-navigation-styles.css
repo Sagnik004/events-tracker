@@ -1,0 +1,87 @@
+#backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #6739b7;
+  padding: 1.5rem 1.55rem;
+}
+
+header .logo {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+header nav svg {
+  fill: #fff;
+  cursor: pointer;
+}
+
+header nav ul {
+  display: none;
+}
+
+.add-event-btn {
+  background-color: transparent;
+  border: none;
+}
+
+#side-drawer {
+  background-color: rgb(240, 237, 237);
+  height: 100%;
+  width: 55%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: transform 0.3s linear;
+}
+
+#side-drawer.open {
+  transform: translateX(0%);
+}
+
+#drawer-menu-icon {
+  margin-top: 35px;
+  padding-right: 29px;
+  text-align: right;
+  font-size: 1.45rem;
+  font-weight: 550;
+  cursor: pointer;
+}
+
+#side-drawer {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+#side-drawer ul {
+  list-style-type: none;
+  margin-top: 1rem;
+}
+
+#side-drawer ul li {
+  padding: 1rem 1.5rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+#side-drawer ul li.active::before {
+  content: "";
+  height: 23px;
+  width: 15px;
+  background-color: #5e35a7;
+  position: absolute;
+  left: 0;
+}
+
+#side-drawer li a {
+  color: inherit;
+}
