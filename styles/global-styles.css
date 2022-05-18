@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   background-color: rgb(240, 237, 237);
   color: rgb(32, 32, 32);
@@ -20,4 +20,24 @@ a {
 
 button {
   font: inherit;
+}
+
+.btn {
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  border: 1px solid rgb(142, 142, 142);
+}
+
+.btn-edit {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: #fff;
+  outline: none;
+  margin-right: 1rem;
+}
+.btn-delete {
+  background-color: #e64353;
+  border-color: #e64353;
+  color: #fff;
+  outline: none;
 }
